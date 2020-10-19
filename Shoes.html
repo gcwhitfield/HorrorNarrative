@@ -11,9 +11,119 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Shoes" startnode="1" creator="Twine" creator-version="2.3.9" ifid="C35F36A6-BCEB-4B83-BE57-30890E9CEBB9" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="346,142" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="2" name="Here is the new passage!!! :D" tags="" position="501,145" size="100,100">Double-click this passage to edit it.sdhf gasd ghfkashd jkashfg kasjhfg kahfg as
+<tw-storydata name="Shoes" startnode="5" creator="Twine" creator-version="2.3.9" ifid="C35F36A6-BCEB-4B83-BE57-30890E9CEBB9" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(http://fonts.googleapis.com/css?family=Commissioner:400,700,400italic,700italic);
+tw-story {
+  font-family: 'Commissioner';
+  background-color: $background_color
+}
+link, tw-link {
+  color: teal;
+}
+tw-link:hover
+{
+  color: pink;
+}
+store-sign{
+  text-align: CENTER;
+  color: cyan;
+  font-size: 50px;
+}
+p.centered{
+  text-align: CENTER
+}
+p.store-sign{
+  text-align: CENTER;
+  color: cyan;
+  font-size: 50px;
+}
+/*
+tw-sidebar
+{
+display: none;
+}
+p.helena-title{
+  text-align: CENTER;
+  color: 'red';
+}
+p.helena-subtitle{
+  text-align: CENTER;
+}
+*/
 
-[[ testing testing testing - helena ]]</tw-passagedata><tw-passagedata pid="3" name=" testing testing testing - helena " tags="" position="501,295" size="100,100">hopefully this works</tw-passagedata></tw-storydata>
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="helena-cashier-station-1.0" tags="" position="823,299" size="100,100">You walk up to the counter, your boxes of shoes in tow. 
+You set them onto the cluttered marble countertop (link: &quot;carefully&quot;)[(link:&quot;demandingly&quot;)[[[carelessly-&gt;helena-cashier-station-1.1]]]].</tw-passagedata><tw-passagedata pid="2" name="helena-cashier-station-1.1" tags="" position="700,299" size="100,100">(set: $ci to (a: &quot;countertop.&quot;, &quot;countertop. How long has this last been cleaned?&quot;, &quot;countertop. Maybe you need to refine the employee requirements to keep them from slacking.&quot;, &quot;countertop. Maybe you need to pay these ungrateful workers less so they know their place.&quot;))A small puff of dust rises from the (link-repeat: &quot;[(print: $ci&#39;s 1st)]&lt;ciband|&quot;)[(replace: ?ciband)[(set: $ci to (rotated: -1, ...$ci))(print: $ci&#39;s 1st)]]
+
+[[Hello? I’d like to check out these shoes, please? -&gt;helena-cashier-station-1.2]] 
+[[Excuse me? where is the goddamn cashier? -&gt;helena-cashier-station-1.2]] </tw-passagedata><tw-passagedata pid="3" name="helena-cashier-station-1.2" tags="" position="577,301" size="100,100">&quot;Ah, hello!&quot; 
+A disheveled boy rushes out from behind the counter. 
+His hair is messy, his employee badge lies crooked across his button-up shirt. 
+He looks awfully young.
+
+&quot;How are you today, maam?&quot; 
+
+[[Fine. -&gt;helena-cashier-station-1.3]]
+[[Good, how are you? -&gt;helena-cashier-station-1.4]]
+[[... -&gt;helena-cashier-station-1.5]]</tw-passagedata><tw-passagedata pid="4" name="helena-cashier-station-1.3" tags="" position="453,225" size="100,100">“Fine”, you (link: &quot;say&quot;)[(link:&quot;say coolly&quot;)[say distastefully]].
+
+You don’t have time for small talk. 
+
+[[helena-cashier-station-1.6]]</tw-passagedata><tw-passagedata pid="5" name="welcome" tags="" position="99,99" size="100,100">You reach for your phone and check the (link: &quot;time&quot;)[time. Just in time for the weekend afternoon rush].
+
+Dangling above the store entrance is a large neon sign.
+(set: $store_sign to ((text-colour: aqua)+(css:&quot;font-size: 40px&quot;)))
+=&gt;&lt;=
+(live: 3s)[$store_sign[Welcome to Morty&#39;s Discount Shoes]]
+
+(live: 4s)[[[ENTER -&gt; entrance]]]
+(set: $background_color to black)</tw-passagedata><tw-passagedata pid="6" name=" entrance" tags="" position="224,100" size="100,100">An employee greets you as you enter the store. They ask if you need any assistance but you politely decline. You continue walking towards the main aisle.
+
+You glance down at your list and then look back up, scanning for any shoes matching the description. Eventually you see the [[gray flats-&gt;first-shoe]] on display at the end of the aisle. </tw-passagedata><tw-passagedata pid="7" name="first-shoe" tags="" position="348,100" size="100,100">You stand in front of the shoes silently. 
+This whole thing feels so silly.
+Your face itches slightly but you restrain yourself from touching it, since it may remove your (link:&quot;disguise&quot;)[disguise. Fake freckles, a wig, a pair of glasses, and a bit of specialized model clay come together to create your false identity. You’re grateful that your best friend was willing to help you out with putting it all on earlier today].
+[[Continue-&gt;first-shoe2]]</tw-passagedata><tw-passagedata pid="8" name="first-shoe2" tags="" position="475,100" size="100,100">You take a closer look at the shoes. They’re kind of cute, actually. The seams are neatly tucked away and the sole is firmly attached to the bottom. The pattern embossed into the leather at the back of the shoe is uniform as free from imperfections. Good.
+
+You place the shoe box into your basket and [[start to walk out of the aisle.-&gt;aisle2]]</tw-passagedata><tw-passagedata pid="9" name="aisle2" tags="" position="599,99" size="100,100">There is a open section of the store with benches to try on different merchandise. To your left, is the [[Men’s-&gt;second-shoe]] section and to your right is [[Women’s-&gt;third-shoe]].</tw-passagedata><tw-passagedata pid="10" name="second-shoe" tags="" position="727,45" size="100,100">In this area, the shoes are all jumbled together rather than organized into different categories like the Women’s shoes. You’re a little confused why that is the case, and decide to make a note of it. 
+
+Walking further into the aisle, you see your next shoe on display. A pair of black rubber rain boots. You grab them and place them into your basket.
+
+[[fourth-shoe]]</tw-passagedata><tw-passagedata pid="11" name="third-shoe" tags="" position="724,172" size="100,100">...
+
+[[fourth-shoe]]</tw-passagedata><tw-passagedata pid="12" name="fourth-shoe" tags="" position="845,99" size="100,100">...
+[[helena-cashier-station-1.0]] </tw-passagedata><tw-passagedata pid="13" name="helena-cashier-station-1.4" tags="" position="451,335" size="100,100">[[helena-cashier-station-1.6]]</tw-passagedata><tw-passagedata pid="14" name="helena-cashier-station-1.5" tags="" position="448,450" size="100,100">[[helena-cashier-station-1.6]]</tw-passagedata><tw-passagedata pid="15" name="helena-cashier-station-1.6" tags="" position="301,283" size="100,100">“Alright, I just need you to sign here to complete your purchase,” the boy says, smiling up at you. He hands you a crisp white [[receipt-&gt;helena-cashier-station-1.7]]. </tw-passagedata><tw-passagedata pid="16" name="helena-cashier-station-1.7" tags="" position="169,283" size="100,100">=&gt;&lt;= 
+(background: gray)[MORTY’S DISCOUNT SHOES 
+Order: #xxxx4444
+
+Shoes: &#96;&#96;$xxx&#96;&#96;.xx
+Shoes: &#96;&#96;$xxx&#96;&#96;.xx
+
+Tax 0.12%: &#96;&#96;$xxx&#96;&#96;.xx (set: $xpense to ((text-style: &quot;blurrier&quot;)+(css:&quot;font-size: 10px&quot;)))
+$xpense[Extra Expense: &#96;&#96;$xxx&#96;&#96;.xx
+Extra Expense 2: &#96;&#96;$xxx&#96;&#96;.xx]
+
+Total: &#96;&#96;$xxxx&#96;&#96;.xx
+]
+[[You buy the shoes. -&gt;act-2-start]]</tw-passagedata><tw-passagedata pid="17" name="act-2-start" tags="" position="162,499" size="100,100">(set: $act2 to (text-colour: red)) $act2[“Thank you for shopping at Morty’s. We hope you come again, ” the cashier says, (link: &quot;smiling widely at you.&quot;)[smiling widely at you. 
+His smile is stretched (link:&quot;a bit too wide.&quot;)[a bit too wide. 
+Is it just the lighting, or (link:&quot;have his pupils shrank?&quot;)[have his pupils shrank?
+Is it just you, or does he look crazed?]]]] 
+
+[[Yeah, thanks.-&gt;act-2.1]]
+[[Ok, bye.-&gt;act-2.1]]
+[[Um, are you okay?-&gt;act-2.2]]
+[[Why are you looking at me like that?-&gt;act-2.3]]</tw-passagedata><tw-passagedata pid="18" name="discarded" tags="" position="701,501" size="100,100">
+“Thank you for shopping at Morty’s. We hope you come again, ” the cashier says, smiling widely at you. 
+(click: &quot;smiling&quot;)[His smile is stretched a bit too wide.] 
+(click: &quot;smile&quot;)[Is it just the lighting, or have his pupils shrank?] 
+(click: &quot;shrank&quot;)[Is it just you, or does he look crazed?]]
+
+
+(set: $act2 to (text-colour: red)) $act2[The boy places your shoes in a sleek black bag. He hands it to you from across the countertop. 
+(set: $smile1 to false)(set: $smile2 to false)(set: $smile3 to false)
+“Thank you for shopping at Morty’s. We hope you come again, ” the cashier says, (link: &quot;smiling&quot;)[(set: $smile1 to true)smiling] widely at you. 
+(set: $p to (link: &quot;smile&quot;)[(set: $smile2 to true)smile])(if: $smile1 is true)[(append: &quot;widely at you.&quot;)[&quot;His &quot;+$p+&quot; is stretched a bit too wide.&quot;]]]
+(if: $smile2 is true)[Is it just the lighting, or have his pupils (link: &quot;shrank&quot;)[(set: $smile3 to true)shrank]?]
+(if: $smile3 is true)[Is it just you, or does he look crazed?]]</tw-passagedata><tw-passagedata pid="19" name="act-2.1" tags="" position="39,699" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="20" name="act-2.2" tags="" position="162,699" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="act-2.3" tags="" position="283,699" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
