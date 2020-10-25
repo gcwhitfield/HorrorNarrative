@@ -19,6 +19,9 @@ tw-story {
 link, tw-link {
   color: teal;
 }
+tw-link.act2{
+  color: maroon;
+}
 tw-link:hover
 {
   color: pink;
@@ -68,7 +71,7 @@ He looks awfully young.
 
 You don’t have time for small talk. 
 
-[[helena-cashier-station-1.6]]</tw-passagedata><tw-passagedata pid="5" name="welcome" tags="" position="98,100" size="100,100">You reach for your phone and check the (link: &quot;time&quot;)[time. Just in time for the weekend afternoon rush].
+[[helena-cashier-station-1.6]]</tw-passagedata><tw-passagedata pid="5" name="welcome" tags="" position="96,99" size="100,100">You reach for your phone and check the (link: &quot;time&quot;)[time. Just in time for the weekend afternoon rush].
 
 Dangling above the store entrance is a large neon sign.
 (set: $store_sign to ((text-colour: aqua)+(css:&quot;font-size: 40px&quot;)))
@@ -76,7 +79,7 @@ Dangling above the store entrance is a large neon sign.
 (live: 3s)[$store_sign[Welcome to Morty&#39;s Discount Shoes]]
 
 (live: 4s)[[[ENTER -&gt; entrance]]]
-(set: $background_color to black)</tw-passagedata><tw-passagedata pid="6" name=" entrance" tags="" position="224,100" size="100,100">An employee greets you as you enter the store. They ask if you need any assistance but you politely decline. You continue walking towards the main aisle.
+(set: $background_color to black)(set:$played_through to false)</tw-passagedata><tw-passagedata pid="6" name=" entrance" tags="" position="224,100" size="100,100">(if: $played_through is false)[(print: &quot;An employee greets you as you enter the store. They ask if you need any assistance but you politely decline. You continue walking towards the main aisle.&quot;)](else:)[(print: &quot;The store is quiet when you enter.&quot;)]
 
 You glance down at your list and then look back up, scanning for any shoes matching the description. Eventually you see the [[gray flats-&gt;first-shoe]] on display at the end of the aisle. </tw-passagedata><tw-passagedata pid="7" name="first-shoe" tags="" position="348,100" size="100,100">=&gt;&lt;=
 AISLE 1
@@ -96,11 +99,14 @@ In this area, the shoes are all jumbled together rather than organized into diff
 
 Walking further into the aisle, you see your next shoe on display. A pair of black rubber rain boots. You grab them and place them into your basket.
 
-[[fourth-shoe]]</tw-passagedata><tw-passagedata pid="11" name="third-shoe" tags="" position="724,172" size="100,100">=&gt;&lt;=
+[[check out the women&#39;s shoes too -&gt;third-shoe]]
+
+[[fourth-shoe]]</tw-passagedata><tw-passagedata pid="11" name="third-shoe" tags="" position="726,172" size="100,100">=&gt;&lt;=
 AISLE 3
 &lt;==
 ...
 
+[[check out the men&#39;s shoes too -&gt;second-shoe]]
 [[fourth-shoe]]</tw-passagedata><tw-passagedata pid="12" name="fourth-shoe" tags="" position="845,99" size="100,100">=&gt;&lt;=
 AISLE 4
 &lt;==
@@ -138,35 +144,32 @@ Is it just you, or does he look crazed?]]]]
 “Thank you for shopping at Morty’s. We hope you come again, ” the cashier says, (link: &quot;smiling&quot;)[(set: $smile1 to true)smiling] widely at you. 
 (set: $p to (link: &quot;smile&quot;)[(set: $smile2 to true)smile])(if: $smile1 is true)[(append: &quot;widely at you.&quot;)[&quot;His &quot;+$p+&quot; is stretched a bit too wide.&quot;]]]
 (if: $smile2 is true)[Is it just the lighting, or have his pupils (link: &quot;shrank&quot;)[(set: $smile3 to true)shrank]?]
-(if: $smile3 is true)[Is it just you, or does he look crazed?]]</tw-passagedata><tw-passagedata pid="19" name="act-2.1" tags="" position="39,631" size="100,100">Double-click this passage to edit it.
-[[...-&gt;act-2.4]]</tw-passagedata><tw-passagedata pid="20" name="act-2.2" tags="" position="163,636" size="100,100">Double-click this passage to edit it.
-[[...-&gt;act-2.4]]</tw-passagedata><tw-passagedata pid="21" name="act-2.3" tags="" position="289,629" size="100,100">Double-click this passage to edit it.
-[[...-&gt;act-2.4]]</tw-passagedata><tw-passagedata pid="22" name="act-2.5" tags="" position="235,782" size="100,100">=&gt;&lt;=
+(if: $smile3 is true)[Is it just you, or does he look crazed?]]</tw-passagedata><tw-passagedata pid="19" name="act-2.1" tags="" position="34,615" size="100,100">You turn away from the cashier. (interaction)
+[[...-&gt;act-2.4]]</tw-passagedata><tw-passagedata pid="20" name="act-2.2" tags="" position="157,618" size="100,100">Are you okay? interaction
+[[...-&gt;act-2.4]]</tw-passagedata><tw-passagedata pid="21" name="act-2.3" tags="" position="281,618" size="100,100">why are you looking at me like that? interaction
+[[...-&gt;act-2.4]]</tw-passagedata><tw-passagedata pid="22" name="act-2.5" tags="" position="227,788" size="100,100">=&gt;&lt;=
 AISLE 4
 &lt;==
 [[aisle 2 -&gt;act-2.6]]
-[[aisle 3 -&gt;act-2.7]]</tw-passagedata><tw-passagedata pid="23" name="act-2.6" tags="" position="356,747" size="100,100">=&gt;&lt;=
+[[aisle 3 -&gt;act-2.7]]</tw-passagedata><tw-passagedata pid="23" name="act-2.6" tags="" position="358,747" size="100,100">=&gt;&lt;=
+AISLE 2
+&lt;==
+Double-click this passage to edit it.
+[[head to the open area-&gt;act-2.8]]</tw-passagedata><tw-passagedata pid="24" name="act-2.7" tags="" position="354,876" size="100,100">=&gt;&lt;=
 AISLE 3
 &lt;==
 Double-click this passage to edit it.
-[[...-&gt;act-2.8]]</tw-passagedata><tw-passagedata pid="24" name="act-2.7" tags="" position="355,875" size="100,100">=&gt;&lt;=
-AISLE 4
-&lt;==
-Double-click this passage to edit it.
-[[...-&gt;act-2.8]]</tw-passagedata><tw-passagedata pid="25" name="act-2.8" tags="" position="474,795" size="100,100">Double-click this passage to edit it. It&#39;s the open area. 
-[[...-&gt;act-2.9]]</tw-passagedata><tw-passagedata pid="26" name="act-2.9" tags="" position="592,797" size="100,100">=&gt;&lt;=
-AISLE 2
-&lt;==
-[[...-&gt;act-2.10]]</tw-passagedata><tw-passagedata pid="27" name="act-2.10" tags="" position="713,798" size="100,100">=&gt;&lt;=
+[[head to the open area-&gt;act-2.8]]</tw-passagedata><tw-passagedata pid="25" name="act-2.8" tags="" position="474,794" size="100,100">Double-click this passage to edit it. It&#39;s the open area. 
+[[aisle 1-&gt;act-2.9]]</tw-passagedata><tw-passagedata pid="26" name="act-2.9" tags="" position="592,797" size="100,100">=&gt;&lt;=
 AISLE 1
 &lt;==
-[[...-&gt;act-3]]</tw-passagedata><tw-passagedata pid="28" name="act-2.4" tags="" position="90,784" size="100,100">thinking
-[[...-&gt;act-2.5]]</tw-passagedata><tw-passagedata pid="29" name="act-3" tags="" position="714,943" size="100,100">you have exited the store
+[[...-&gt;act-3]]</tw-passagedata><tw-passagedata pid="27" name="act-2.4" tags="" position="89,784" size="100,100">character&#39;s thoughts/observations before moving out of the store
+[[head back to aisle 4-&gt;act-2.5]]</tw-passagedata><tw-passagedata pid="28" name="act-3" tags="" position="700,942" size="100,100">you have exited the store
 please come again soon
 + recipt
 =&gt;&lt;=
-[[Play Again -&gt;Welcome 2]]</tw-passagedata><tw-passagedata pid="30" name="Welcome 2" tags="" position="856,944" size="100,100">=&gt;&lt;=
-(set: $store_sign to ((text-colour: aqua)+(css:&quot;font-size: 40px&quot;))) $store_sign[Welcome to Morty&#39;s Discount Shoes](mouseover-replace: &quot;Welcome to Morty&#39;s Discount Shoes&quot;)[Welcome Back to Morty&#39;s Discount Shoes](mouseout-replace: &quot;Welcome Back to Morty&#39;s Discount Shoes&quot;)[Welcome to Morty&#39;s Discount Shoes]
+[[Play Again -&gt;Welcome 2]]</tw-passagedata><tw-passagedata pid="29" name="Welcome 2" tags="" position="855,944" size="100,100">=&gt;&lt;=
+(set: $store_sign to ((text-colour: aqua)+(css:&quot;font-size: 40px&quot;))) $store_sign[Welcome to Morty&#39;s Discount Shoes](mouseover-replace: &quot;Welcome to Morty&#39;s Discount Shoes&quot;)[Welcome Back to Morty&#39;s Discount Shoes](mouseout-replace: &quot;Welcome Back to Morty&#39;s Discount Shoes&quot;)[Welcome to Morty&#39;s Discount Shoes](set:$played_through to true)
 
 [[ENTER -&gt; entrance]]</tw-passagedata></tw-storydata>
 
