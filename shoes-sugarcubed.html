@@ -127,31 +127,26 @@ store-sign{
   color: cyan;
   font-size: 50px;
 }
-p.centered{
-  text-align: CENTER
-}
-p.store-sign{
-  text-align: CENTER;
-  color: cyan;
-  font-size: 50px;
-}
-.normal-store{
-  background-color: white;
-  color: black;
+
+/* Act 1 */
+.normal-store {
+  background-color: #e6e2e2;
+  color: #161515;
 } 
-/*
-tw-sidebar
-{
-display: none;
+
+.normal-store a {
+  color: #b42039;
+} 
+
+/* Act 2 */
+.dark-store{
+  background-color: black;
+  color: #e6e2e2;
+} 
+
+.dark-store a {
+  color: #b42039;
 }
-p.helena-title{
-  text-align: CENTER;
-  color: 'red';
-}
-p.helena-subtitle{
-  text-align: CENTER;
-}
-*/
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 </script><tw-passagedata pid="1" name="helena-cashier-station-1.0" tags="" position="836,365" size="100,100">You walk up to the cashier&#39;s counter at the back of the store, your boxes of shoes in tow. 
@@ -176,7 +171,7 @@ He looks awfully young.
 
 You don’t have time for small talk. 
 
-[[continue -&gt;helena-cashier-station-1.6]]</tw-passagedata><tw-passagedata pid="5" name="welcome" tags="" position="96,99" size="100,100">You reach for your phone and check the &lt;&lt;linkreplace &quot;time&quot;&gt;&gt;time. Just in time for the weekend afternoon rush&lt;&lt;/linkreplace&gt;&gt;.
+[[continue -&gt;helena-cashier-station-1.6]]</tw-passagedata><tw-passagedata pid="5" name="welcome" tags="normal-store" position="96,99" size="100,100">You reach for your phone and check the &lt;&lt;linkreplace &quot;time&quot;&gt;&gt;time. Just in time for the weekend afternoon rush&lt;&lt;/linkreplace&gt;&gt;.
 
 Dangling above the store entrance is a large neon sign.
 
@@ -187,7 +182,7 @@ Dangling above the store entrance is a large neon sign.
   			font-family: Impact, Haettenschweiler, &#39;Arial Narrow Bold&#39;, sans-serif;
   			font-size: 10vmin;&quot;&gt;Welcome to Morty&#39;s Discount Shoes&lt;/div&gt;
 
-[[ENTER-&gt;entrance]]</tw-passagedata><tw-passagedata pid="6" name="entrance" tags="" position="224,100" size="100,100">An employee greets you as you enter the store. They ask if you need any assistance but you politely decline. You continue walking towards the main aisle.
+[[ENTER-&gt;entrance]]</tw-passagedata><tw-passagedata pid="6" name="entrance" tags="normal-store" position="224,100" size="100,100">An employee greets you as you enter the store. They ask if you need any assistance but you politely decline. You continue walking towards the main aisle.
 
 You glance down at your list and then look back up, scanning for any shoes matching the description. Eventually you see the [[blue sneakers-&gt;first-shoe]] on display at the end of the aisle. </tw-passagedata><tw-passagedata pid="7" name="first-shoe" tags="" position="349,100" size="100,100">
 AISLE 1
@@ -305,12 +300,12 @@ As you push the box further into the shelf you feel an unusually warm breeze of 
 
 [[&gt;&gt; Keep going.-&gt;act-2-flats-1]]</tw-passagedata><tw-passagedata pid="30" name="act-2-mirror-4" tags="normal-store" position="273,776" size="100,100">Double-click this passage to edit it.
 
-[[act-2-flats-1]]</tw-passagedata><tw-passagedata pid="31" name="act-2-flats-2" tags="normal-store" position="130,1018" size="100,100">AISLE 4
+[[act-2-flats-1]]</tw-passagedata><tw-passagedata pid="31" name="act-2-flats-2" tags="normal-store" position="129,1018" size="100,100">AISLE 4
 
 The store is very quiet now.  You can feel the blood pump through your head and around your ears. You notice the sound of your shoes rubbing against the carpet as you &lt;&lt;linkreplace&quot;meander down the aisle.&quot;&gt;&gt;meander down the aisle. You stop. You look around the store and see that it’s empty.&lt;&lt;/linkreplace&gt;&gt;
 
 &lt;&lt;linkreplace &quot;The sound of shuffling feet comes from somewhere behind you.&quot;&gt;&gt;The sound of shuffling feet comes from somewhere behind you. You turn around and the store [[goes dark.-&gt;act-2-dark]]&lt;&lt;/linkreplace&gt;&gt;
-</tw-passagedata><tw-passagedata pid="32" name="act-2-dark" tags="" position="128,1137" size="100,100">AISLE 4
+</tw-passagedata><tw-passagedata pid="32" name="act-2-dark" tags="dark-store" position="128,1137" size="100,100">AISLE 4
 
 What the hell just happened? Was there a power outage? Is someone playing a prank on you?
 
