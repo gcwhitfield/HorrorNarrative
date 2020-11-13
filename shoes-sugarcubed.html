@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="shoes-sugarcubed" startnode="5" creator="Twine" creator-version="2.3.9" ifid="C35F36A6-BCEB-4B83-BE57-30890E9CEBB9" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(http://fonts.googleapis.com/css?family=Commissioner:400,700,400italic,700italic);
+	<tw-storydata name="shoes-sugarcubed" startnode="17" creator="Twine" creator-version="2.3.9" ifid="C35F36A6-BCEB-4B83-BE57-30890E9CEBB9" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(http://fonts.googleapis.com/css?family=Commissioner:400,700,400italic,700italic);
 tw-story {
   font-family: 'Commissioner';
   background-color: $background_color
@@ -223,7 +223,7 @@ Extra Expense 2: &#96;&#96;$xxx&#96;&#96;.xx
 
 Total: &#96;&#96;$xxxx&#96;&#96;.xx
 
-[[You buy the shoes. -&gt;act-2-start]]</tw-passagedata><tw-passagedata pid="17" name="act-2-start" tags="" position="158,410" size="100,100">“Thank you for shopping at Morty’s. We hope you come again, ” the cashier says, &lt;&lt;linkreplace &quot;smiling widely at you.&quot;&gt;&gt;smiling widely at you. 
+[[You buy the shoes. -&gt;act-2-start]]</tw-passagedata><tw-passagedata pid="17" name="act-2-start" tags="" position="158,410" size="100,100">“Thank you for shopping at Morty’s. Have a great weekend, ” the cashier says, &lt;&lt;linkreplace &quot;smiling widely at you.&quot;&gt;&gt;smiling widely at you. 
 His smile is stretched &lt;&lt;linkreplace &quot;a bit too wide.&quot;&gt;&gt;a bit too wide. 
 Is it just the lighting, or &lt;&lt;linkreplace &quot;have his pupils shrank?&quot;&gt;&gt;have his pupils shrank?
 Is it just you, or does he look crazed?&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt; 
@@ -243,7 +243,7 @@ Is it just you, or does he look crazed?&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/link
 “Thank you for shopping at Morty’s. We hope you come again, ” the cashier says, (link: &quot;smiling&quot;)[(set: $smile1 to true)smiling] widely at you. 
 (set: $p to (link: &quot;smile&quot;)[(set: $smile2 to true)smile])(if: $smile1 is true)[(append: &quot;widely at you.&quot;)[&quot;His &quot;+$p+&quot; is stretched a bit too wide.&quot;]]]
 (if: $smile2 is true)[Is it just the lighting, or have his pupils (link: &quot;shrank&quot;)[(set: $smile3 to true)shrank]?]
-(if: $smile3 is true)[Is it just you, or does he look crazed?]]</tw-passagedata><tw-passagedata pid="19" name="act-2.1" tags="" position="34,528" size="100,100">You turn away from the counter. So what if he seemed &lt;&lt;linkreplace &quot;a bit off?&quot;&gt;&gt;&lt;&lt;linkreplace &quot;really off?&quot;&gt;&gt;crazy?&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt; [[You got what you wanted.-&gt;act-2.4]]</tw-passagedata><tw-passagedata pid="20" name="act-2.2" tags="" position="156,523" size="100,100">The cashier blinks at you. &quot;Why wouldn&#39;t I be okay?&quot; 
+(if: $smile3 is true)[Is it just you, or does he look crazed?]]</tw-passagedata><tw-passagedata pid="19" name="act-2.1" tags="" position="34,528" size="100,100">You turn away from the counter. So what if he seemed &lt;&lt;linkreplace &quot;a bit off?&quot;&gt;&gt;&lt;&lt;linkreplace &quot;really off?&quot;&gt;&gt;crazy?&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt; [[You got what you wanted.-&gt;act-2.4]]</tw-passagedata><tw-passagedata pid="20" name="act-2.2" tags="" position="155,524" size="100,100">The cashier blinks at you. &quot;Why wouldn&#39;t I be okay?&quot; 
 
 You stare at him. He stares back at you. 
 
@@ -253,7 +253,7 @@ Maybe you were just [[imagining things.-&gt;act-2.4]]</tw-passagedata><tw-passag
 
 “Are you okay?” 
 
-You can’t believe that this person has the audacity to ask if you’re okay. You would have fired him right there. What a creep. This place needs new management. You roll your eyes and [[walk away.-&gt;act-2.4]]</tw-passagedata><tw-passagedata pid="22" name="act-2-flats-1" tags="" position="132,898" size="100,100">AISLE 4
+You can’t believe that this person has the audacity to ask if you’re okay. You would have fired him right there. What a creep. This place needs new management. You roll your eyes and [[walk away.-&gt;act-2.4]]</tw-passagedata><tw-passagedata pid="22" name="act-2-flats-1" tags="" position="131,897" size="100,100">AISLE 4
 
 You begin to walk away from the mirror and head for the exit of the store. You try to take your mind off the unusual encounter by thinking about what you’ll do when you leave. 
 
@@ -283,11 +283,11 @@ It feels like something pulled your ankle backwards.
 
 You look back at your leg but there is nothing there.
 
-[[act-2-flats-1]]</tw-passagedata><tw-passagedata pid="29" name="act-2-mirror-3" tags="" position="137,776" size="100,100">There is an empty space on the shelf where the shoebox seems to have fallen from. You place the box into the rectangular space and push it into the shelf.
+[[&gt;&gt; Keep going.-&gt;act-2-flats-1]]</tw-passagedata><tw-passagedata pid="29" name="act-2-mirror-3" tags="" position="137,776" size="100,100">There is an empty space on the shelf where the shoebox seems to have fallen from. You place the box into the rectangular space and push it into the shelf.
 
 As you push the box further into the shelf you feel an unusually warm breeze of air, which makes you slightly uncomfortable.
 
-[[act-2-flats-1]]</tw-passagedata><tw-passagedata pid="30" name="act-2-mirror-4" tags="" position="272,776" size="100,100">Double-click this passage to edit it.
+[[&gt;&gt; Keep going.-&gt;act-2-flats-1]]</tw-passagedata><tw-passagedata pid="30" name="act-2-mirror-4" tags="" position="273,776" size="100,100">Double-click this passage to edit it.
 
 [[act-2-flats-1]]</tw-passagedata><tw-passagedata pid="31" name="act-2-flats-2" tags="" position="131,1025" size="100,100">AISLE 4
 
@@ -300,9 +300,7 @@ What the hell just happened? Was there a power outage? Is someone playing a pran
 
 The store is silent once again. You reach for your cell phone to use as a flashlight.
 
-&lt;&lt;linkreplace &quot;Turn on your flashlight.&quot;&gt;&gt;
-
-You turn on your flashlight and shine it around. &lt;&lt;linkreplace &quot;There&#39;s no one in the store.&quot;&gt;&gt;There’s no one in the store. Your throat feels dry and your palms are damp with confusion and anxiety. You feel like you are being observed but you do know who by whom. You are alone, yet you feel as if you are standing in front of an audience, on display for hundreds of silent spectators.&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;linkreplace &quot;Turn on your flashlight.&quot;&gt;&gt;You turn on your flashlight and shine it around. &lt;&lt;linkreplace &quot;There&#39;s no one in the store.&quot;&gt;&gt;There’s no one in the store. Your throat feels dry and your palms are damp with confusion and anxiety. You feel like you are being observed but you do know who by whom. You are alone, yet you feel as if you are standing in front of an audience, on display for hundreds of silent spectators.&lt;&lt;/linkreplace&gt;&gt;
 
 You turn around and briskly walk towards the [[end of the aisle.-&gt;act-2-open-area-choice]]
 &lt;&lt;/linkreplace&gt;&gt;
@@ -317,7 +315,7 @@ There’s something shifting on the ground. It’s slick and cold. The soles of 
 </tw-passagedata><tw-passagedata pid="34" name="act-2-open-area-choice" tags="" position="246,1138" size="100,100">[[&gt;&gt; Go to the women&#39;s section (AISLE 3)-&gt;act-2-blocked-aisle]]
 [[&gt;&gt; Go to the men&#39;s section (AISLE 2)-&gt;act-2-water-1]]</tw-passagedata><tw-passagedata pid="35" name="act-2-blocked-aisle" tags="" position="246,1250" size="100,100">AISLE 3
 
-For some reason the aisle has been blocked off. You can&#39;t go this way. 
+For some reason the aisle has been roped off. You can&#39;t go this way. 
 
 [[&gt;&gt; Go back.-&gt;act-2-open-area-choice]]</tw-passagedata><tw-passagedata pid="36" name="act-2-water-2.1" tags="" position="444,1252" size="100,100">AISLE 2
 
@@ -383,7 +381,7 @@ It looks like there&#39;s something coming up behind you in the watery reflectio
 
 It must have been your imagination. &lt;&lt;/linkreplace&gt;&gt;
 
-[[&gt;&gt; Keep going.-&gt;act-2-meat-1]]</tw-passagedata><tw-passagedata pid="47" name="act-2-meat-1" tags="" position="940,1469" size="100,100">AISLE 1
+&gt;&gt; END OF BETA &lt;&lt; </tw-passagedata><tw-passagedata pid="47" name="act-2-meat-1" tags="" position="940,1469" size="100,100">AISLE 1
 
 The sound of your shoes squishing onto the tile is slightly different in this aisle. Perhaps it is just your imagination. Maybe it sounded this way the entire time. It feels more…. Slimier…sticker… more visceral. 
 
