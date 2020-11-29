@@ -215,7 +215,7 @@ $(document.head).find('#style-ui-bar').remove();
 // continue.min.js, for SugarCube 2, by Chapel
 // v1.0.1, 2020-11-24, 9f958db927f80b0101af14e286ea0ad142026739
 ;!function(){"use strict";var n=["a",":button",'*[role="button"]',".continue-macro-ignore","#ui-bar","#ui-dialog"],t=0;function o(){$(document).on("click.continue-macro keyup.continue-macro",n.join(", "),(function(n){n.stopPropagation()}))}function e(){if(State.length>0)return!1;var t=[].slice.call(arguments).flatten();return n=n.concat(t),!0}function c(n,o){var e=function(){var n="."+Date.now().toString(36)+"-"+t;return t++,n}();if(o&&"function"==typeof o){var c="click.continue-macro"+e;n&&(c=c+" keyup.continue-macro"+e),$(document).one(c,(function(){o.call(),$(document).off(e)}))}}prehistory["%%continue-expiration"]=function(){t=0},$(document).one(":passagerender",(function(){o()})),Macro.add("ignore",{handler:function(){if(!e(this.args))return this.error("the <<ignore>> macro should only be run from StoryInit or equivalent.")}}),Macro.add("cont",{tags:null,handler:function(){var n,t=this.args.includes("append"),o=this.args.includesAny("key","keypress","press","button"),e=this.payload[0].contents;t&&(n=$(document.createElement("span")).addClass("macro-"+this.name).appendTo(this.output)),c(o,this.createShadowWrapper((function(){t&&n&&n instanceof $?n.wiki(e):$.wiki(e)})))}}),setup.cont=c,setup.cont.ignore=e,setup.cont.reset=function(){var t=[].slice.call(arguments).flatten();n=n.concat(t),$(document).off(".continue-macro"),o()},window.cont=window.cont||setup.cont}();
-// end continue.min.js</script><tw-tag name="panic-1" color="gray"></tw-tag><tw-passagedata pid="1" name="helena-cashier-station-1.0" tags="normal-store" position="904,427" size="100,100">You walk up to the cashier&#39;s counter at the back of the store, your boxes of shoes in tow. 
+// end continue.min.js</script><tw-tag name="panic-1" color="gray"></tw-tag><tw-passagedata pid="1" name="helena-cashier-station-1.0" tags="normal-store" position="903,427" size="100,100">You walk up to the cashier&#39;s counter at the back of the store, your boxes of shoes in tow. 
 You set them onto the cluttered marble countertop &lt;&lt;linkreplace &quot;carefully&quot;&gt;&gt;&lt;&lt;linkreplace &quot;demandingly&quot;&gt;&gt;[[carelessly-&gt;helena-cashier-station-1.1]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;.</tw-passagedata><tw-passagedata pid="2" name="helena-cashier-station-1.1" tags="normal-store" position="786,430" size="100,100">A small puff of dust rises from the &lt;&lt;cycle &quot;$answer&quot; autoselect&gt;&gt;
 	&lt;&lt;option &quot;countertop.&quot;&gt;&gt;
 	&lt;&lt;option &quot;countertop. &lt;br /&gt;How long has this last been cleaned?&quot;&gt;&gt;
@@ -237,7 +237,13 @@ He looks awfully young.
 
 [[You don’t have time for small talk. -&gt;helena-cashier-station-1.6]]</tw-passagedata><tw-passagedata pid="5" name="welcome" tags="mall-light" position="100,99" size="100,100">You reach for your phone and check the time. Just in time for the weekend afternoon rush. 
 
-Before you stands a small store with towers of boxes in its display windows and a [[large, well-worn sign-&gt;morty-sign]] dangling above. </tw-passagedata><tw-passagedata pid="6" name="entrance" tags="normal-store" position="302,177" size="100,100">An employee greets you as you enter the store. They ask if you need any assistance but you politely decline. You continue walking towards the main aisle.
+Before you stands a small store with towers of boxes in its display windows and a [[large, well-worn sign-&gt;morty-sign]] dangling above. 
+
+&lt;audio src=&quot;https://www.dropbox.com/s/gnn15qstvmt2qmr/crazy%20he%20calls%20me%202.mp3?dl=0&quot; autoplay /&gt;
+
+&lt;&lt;cacheaudio &quot;testinggg&quot; &quot;https://www.dropbox.com/s/gnn15qstvmt2qmr/crazy%20he%20calls%20me%202.mp3?dl=0&quot; &gt;&gt;
+
+</tw-passagedata><tw-passagedata pid="6" name="entrance" tags="normal-store" position="302,177" size="100,100">An employee greets you as you enter the store. They ask if you need any assistance but you politely decline. You continue walking towards the main aisle.
 
 You glance down at your shopping list and then look back up, scanning for any shoes matching the description. Eventually you see the [[blue sneakers-&gt;first-shoe]] on display at the end of the aisle. 
 </tw-passagedata><tw-passagedata pid="7" name="first-shoe" tags="normal-store" position="427,177" size="100,100">&lt;div style=&quot;text-align: CENTER;&quot;&gt;AISLE 1&lt;/div&gt;
@@ -328,21 +334,42 @@ You can’t believe that this person has the audacity to ask if you’re okay. Y
 
 You begin to walk away from the mirror and head for the exit of the store. You try to take your mind off the unusual encounter by thinking about what you’ll do [[when you leave. -&gt;act-2-flats-2]] 
 
-You’re looking forward to taking off the disguise [[when you get home.-&gt;act-2-flats-2]] A hot shower. Chinese food. Netflix. But then you remember that you have to send a 1 page report of your shoe buying experience to the Quality Assurance manager before the end of the day. You roll your eyes.</tw-passagedata><tw-passagedata pid="23" name="act-2.4" tags="normal-store" position="225,710" size="100,100">You notice the sound of your footsteps as you walk away from the cashier. Was the store always this quiet? You continue walking towards the aisles.
+You’re looking forward to taking off the disguise [[when you get home.-&gt;act-2-flats-2]] A hot shower. Chinese food. Netflix. But then you remember that you have to send a 1 page report of your shoe buying experience to the Quality Assurance manager before the end of the day. You roll your eyes.</tw-passagedata><tw-passagedata pid="23" name="act-2.4" tags="normal-store" position="220,707" size="100,100">You notice the sound of your footsteps as you walk away from the cashier. Was the store always this quiet? You continue walking towards the aisles.
 
 Somebody has knocked a bunch of shoeboxes onto the ground in front of the mirror where you tried on your shoes. 
 
 [[&gt;&gt; Step over them.-&gt;act-2-mirror-2]]
 [[&gt;&gt; Put them back on the shelves.-&gt;act-2-mirror-3]]
-&lt;&lt;link &quot;&gt;&gt; Look at the mirror.&quot;&gt;&gt;&lt;&lt;popover&gt;&gt;&lt;div style = &#39;text-align: CENTER&#39;&gt;&lt;img src=&#39;https://scontent-iad3-1.xx.fbcdn.net/v/t1.15752-9/128276128_220772099406100_3222573952502806835_n.png?_nc_cat=101&amp;ccb=2&amp;_nc_sid=ae9488&amp;_nc_ohc=koaE5-PnDvsAX8K2gNf&amp;_nc_ht=scontent-iad3-1.xx&amp;oh=49dd4bc5687c51adb1068b18fc7c01c9&amp;oe=5FE8020D&#39; width=&#39;50%&#39;/&gt;&lt;/div&gt;&lt;&lt;/popover&gt;&gt;&lt;&lt;/link&gt;&gt; </tw-passagedata><tw-passagedata pid="24" name="act-3" tags="dark-store" position="1725,120" size="100,100">you have exited the store
+&lt;&lt;link &quot;&gt;&gt; Look at the mirror.&quot;&gt;&gt;
+&lt;&lt;popover &#39;transparent&#39;&gt;&gt;&lt;div style = &#39;text-align: CENTER&#39;&gt;&lt;img src=&quot;https://i.imgur.com/SuMBV2G.png&quot; title=&quot;source: imgur.com&quot; width=&#39;49%&#39;/&gt;&lt;/div&gt; &lt;&lt;cont&gt;&gt;&lt;&lt;dismisspopover&gt;&gt;&lt;&lt;/cont&gt;&gt;
+&lt;&lt;set $seconds to 3&gt;&gt;
+&lt;&lt;silently&gt;&gt;
+    &lt;&lt;repeat 1s&gt;&gt;
+        &lt;&lt;set $seconds to $seconds - 1&gt;&gt;
+		&lt;&lt;if $seconds eq 0&gt;&gt;
+			&lt;&lt;popover &#39;transparent&#39;&gt;&gt; &lt;div style = &#39;text-align: CENTER&#39;&gt;			&lt;img src = &quot;https://i.imgur.com/FLkFasf.png&quot; title=&quot;source: 			imgur.com&quot; width = &#39;40%&#39; /&gt; &lt;/div&gt; &lt;&lt;cont&gt;&gt;&lt;&lt;dismisspopover&gt;&gt;			&lt;&lt;/cont&gt;&gt;
+				&lt;&lt;set $seconds2 to 2&gt;&gt; 
+				&lt;&lt;silently&gt;&gt;
+					&lt;&lt;repeat 1s&gt;&gt;
+						&lt;&lt;set $seconds2 to $seconds2 - 1&gt;&gt; 
+						&lt;&lt;if $seconds2 eq 0&gt;&gt;
+							&lt;&lt;dismisspopover&gt;&gt;
+						&lt;&lt;/if&gt;&gt; 
+					&lt;&lt;/repeat&gt;&gt;
+				&lt;&lt;/silently&gt;&gt;
+			&lt;&lt;/popover&gt;&gt;
+			&lt;&lt;dismisspopover&gt;&gt;
+		&lt;&lt;/if&gt;&gt;
+    &lt;&lt;/repeat&gt;&gt;
+&lt;&lt;/silently&gt;&gt;
+&lt;&lt;/popover&gt;&gt;&lt;&lt;/link&gt;&gt; 		</tw-passagedata><tw-passagedata pid="24" name="act-3" tags="dark-store" position="1725,120" size="100,100">you have exited the store
 please come again soon
 + recipt
 
-[[Play Again -&gt;morty-sign]]</tw-passagedata><tw-passagedata pid="25" name="pre-cashier-mirror-scene-1" tags="normal-store" position="1029,334" size="100,100">There&#39;s a full-length mirror at the end of the aisle in front of rows and rows of neatly arranged shoeboxes. Just beyond the mirror is a small cashier station, the only one in the store. 
+[[Play Again -&gt;morty-sign]]</tw-passagedata><tw-passagedata pid="25" name="pre-cashier-mirror-scene-1" tags="normal-store" position="1030,333" size="100,100">There&#39;s a full-length mirror at the end of the aisle in front of rows and rows of neatly arranged shoeboxes. Just beyond the mirror is a small cashier station, the only one in the store. 
 
-&lt;&lt;link &quot;&gt;&gt; Try on your shoes in front of the mirror.&quot;&gt;&gt;&lt;&lt;popover&gt;&gt;&lt;div style = &#39;text-align: CENTER&#39;&gt;&lt;img src=&#39;https://scontent-iad3-1.xx.fbcdn.net/v/t1.15752-9/126109824_393098122004366_2747157922557048735_n.png?_nc_cat=105&amp;ccb=2&amp;_nc_sid=ae9488&amp;_nc_ohc=mTL0dGWJLDUAX8QONa2&amp;_nc_ht=scontent-iad3-1.xx&amp;oh=eaf3daf6f7b57628fcc917bcbd9265e1&amp;oe=5FDF9808&#39; width=&#39;50%&#39;/&gt;&lt;/div&gt;&lt;&lt;/popover&gt;&gt;&lt;&lt;/link&gt;&gt; 
-[[&gt;&gt; Check out your shoes.-&gt;helena-cashier-station-1.0]]
-</tw-passagedata><tw-passagedata pid="26" name="@pre-cashier-mirror-scene-2" tags="normal-store" position="1028,467" size="100,100">&lt;img src=&#39;https://scontent-iad3-1.xx.fbcdn.net/v/t1.15752-9/126109824_393098122004366_2747157922557048735_n.png?_nc_cat=105&amp;ccb=2&amp;_nc_sid=ae9488&amp;_nc_ohc=mTL0dGWJLDUAX8QONa2&amp;_nc_ht=scontent-iad3-1.xx&amp;oh=eaf3daf6f7b57628fcc917bcbd9265e1&amp;oe=5FDF9808&#39; width=&#39;50%&#39;/&gt;
+&lt;&lt;link &quot;&gt;&gt; Try on your shoes in front of the mirror.&quot;&gt;&gt;&lt;&lt;popover &#39;transparent&#39;&gt;&gt;&lt;div style = &#39;text-align: CENTER&#39;&gt;&lt;img src=&quot;https://i.imgur.com/FLkFasf.png&quot; title=&quot;source: imgur.com&quot; width = &#39;40%&#39;/&gt;&lt;/div&gt;&lt;&lt;cont&gt;&gt;&lt;&lt;dismisspopover&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/popover&gt;&gt;&lt;&lt;/link&gt;&gt; 
+[[&gt;&gt; Check out your shoes.-&gt;helena-cashier-station-1.0]]</tw-passagedata><tw-passagedata pid="26" name="@pre-cashier-mirror-scene-2" tags="normal-store" position="1028,467" size="100,100">&lt;img src=&#39;https://scontent-iad3-1.xx.fbcdn.net/v/t1.15752-9/126109824_393098122004366_2747157922557048735_n.png?_nc_cat=105&amp;ccb=2&amp;_nc_sid=ae9488&amp;_nc_ohc=mTL0dGWJLDUAX8QONa2&amp;_nc_ht=scontent-iad3-1.xx&amp;oh=eaf3daf6f7b57628fcc917bcbd9265e1&amp;oe=5FDF9808&#39; width=&#39;50%&#39;/&gt;
 [[&gt;&gt; Check out your shoes.-&gt;helena-cashier-station-1.0]]</tw-passagedata><tw-passagedata pid="27" name="act-2-mirror-2" tags="normal-store" position="104,834" size="100,100">Your foot catches on something and you stumble forward, stopping your fall with your hands. 
 
 It feels like something pulled your ankle backwards. 
@@ -355,7 +382,40 @@ As you push the box further into the shelf you feel an unusually warm breeze of 
 
 [[&gt;&gt; Keep going.-&gt;act-2-flats-1]]</tw-passagedata><tw-passagedata pid="29" name="act-2-mirror-4" tags="normal-store" position="347,835" size="100,100">&lt;img src = &#39;https://scontent-iad3-1.xx.fbcdn.net/v/t1.15752-9/128276128_220772099406100_3222573952502806835_n.png?_nc_cat=101&amp;ccb=2&amp;_nc_sid=ae9488&amp;_nc_ohc=koaE5-PnDvsAX8K2gNf&amp;_nc_ht=scontent-iad3-1.xx&amp;oh=49dd4bc5687c51adb1068b18fc7c01c9&amp;oe=5FE8020D&#39; width=&#39;40%&#39;/&gt;
 
-[[&gt;&gt; Keep going.-&gt;act-2-flats-1]]</tw-passagedata><tw-passagedata pid="30" name="act-2-flats-2" tags="normal-store" position="218,1080" size="100,100">&lt;div style=&quot;text-align: CENTER;&quot;&gt;AISLE 4&lt;/div&gt;
+[[&gt;&gt; Keep going.-&gt;act-2-flats-1]]
+
+
+You notice the sound of your footsteps as you walk away from the cashier. Was the store always this quiet? You continue walking towards the aisles.
+
+Somebody has knocked a bunch of shoeboxes onto the ground in front of the mirror where you tried on your shoes. 
+
+[[&gt;&gt; Step over them.-&gt;act-2-mirror-2]]
+[[&gt;&gt; Put them back on the shelves.-&gt;act-2-mirror-3]]
+&lt;&lt;link &quot;&gt;&gt; Look at the mirror.&quot;&gt;&gt;&lt;&lt;popover &#39;transparent&#39;&gt;&gt;&lt;div style = &#39;text-align: CENTER&#39;&gt;&lt;img src=&quot;https://i.imgur.com/SuMBV2G.png&quot; title=&quot;source: imgur.com&quot; width=&#39;50%&#39;/&gt;&lt;/div&gt;
+&lt;&lt;cont&gt;&gt;&lt;&lt;dismisspopover&gt;&gt;&lt;&lt;/cont&gt;&gt;
+&lt;&lt;set $seconds to 3&gt;&gt;
+&lt;&lt;silently&gt;&gt;
+    &lt;&lt;repeat 1s&gt;&gt;
+        &lt;&lt;set $seconds to $seconds - 1&gt;&gt;
+		&lt;&lt;if $seconds eq 0&gt;&gt;
+			&lt;&lt;dismisspopover&gt;&gt;
+		&lt;&lt;/if&gt;&gt;
+    &lt;&lt;/repeat&gt;&gt;
+&lt;&lt;/silently&gt;&gt;
+&lt;&lt;/popover&gt;&gt;&lt;&lt;/link&gt;&gt; 
+
+
+&lt;&lt;popover &#39;transparent&#39;&gt;&gt; &lt;div style = &#39;text-align: CENTER&#39;&gt;			&lt;img src = &quot;https://i.imgur.com/FLkFasf.png&quot; title=&quot;source: 			imgur.com&quot; width = &#39;40%&#39; /&gt; &lt;/div&gt; 
+				&lt;&lt;set $seconds to 3&gt;&gt; 
+				&lt;&lt;silently&gt;&gt;
+					&lt;&lt;repeat 1s&gt;&gt;
+						&lt;&lt;set $seconds to $seconds - 1&gt;&gt; 
+						&lt;&lt;if $seconds eq 0&gt;&gt;
+							&lt;&lt;dismisspopover&gt;&gt;
+						&lt;&lt;/if&gt;&gt; 
+					&lt;&lt;/repeat&gt;&gt;
+				&lt;&lt;/silently&gt;&gt;
+			&lt;&lt;/popover&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="act-2-flats-2" tags="normal-store" position="218,1080" size="100,100">&lt;div style=&quot;text-align: CENTER;&quot;&gt;AISLE 4&lt;/div&gt;
 
 The store is very quiet now.  You can feel the blood pump through your head and around your ears. You notice the sound of your shoes rubbing against the carpet as you &lt;&lt;linkreplace&quot;meander down the aisle.&quot;&gt;&gt;meander down the aisle. You stop. You look around the store and see that it’s empty.&lt;&lt;/linkreplace&gt;&gt;
 
@@ -515,9 +575,11 @@ Your flashlight isn&#39;t on and you can&#39;t see anything.
 
 This has gone on long enough. You have to get out. 
 
-[[act-3]]</tw-passagedata><tw-passagedata pid="53" name="morty-sign" tags="mall-light" position="175,225" size="100,100">&lt;div style=&quot;text-align: CENTER; font-size: 40px; color:#161515;&quot;&gt;WELCOME TO MORTY&#39;S DISCOUNT SHOES&lt;/div&gt;&lt;span class=&#39;sign&#39;&gt;&lt;img src = &#39;https://scontent-iad3-1.xx.fbcdn.net/v/t1.15752-9/128083711_385554106098907_7129749131256007331_n.png?_nc_cat=103&amp;ccb=2&amp;_nc_sid=ae9488&amp;_nc_ohc=YMMdi5uRdhEAX9_BH62&amp;_nc_ht=scontent-iad3-1.xx&amp;oh=c2d97df236c8df5e29a27f3a06b0f159&amp;oe=5FE578EE&#39; width=&#39;100%&#39;/&gt;&lt;/span&gt;
+[[act-3]]</tw-passagedata><tw-passagedata pid="53" name="morty-sign" tags="mall-light" position="174,225" size="100,100">&lt;div style=&quot;text-align: CENTER; font-size: 40px; color:#161515;&quot;&gt;WELCOME TO MORTY&#39;S DISCOUNT SHOES&lt;/div&gt;&lt;span class=&#39;sign&#39;&gt;&lt;img src = &#39;https://scontent-iad3-1.xx.fbcdn.net/v/t1.15752-9/128083711_385554106098907_7129749131256007331_n.png?_nc_cat=103&amp;ccb=2&amp;_nc_sid=ae9488&amp;_nc_ohc=YMMdi5uRdhEAX9_BH62&amp;_nc_ht=scontent-iad3-1.xx&amp;oh=c2d97df236c8df5e29a27f3a06b0f159&amp;oe=5FE578EE&#39; width=&#39;100%&#39;/&gt;&lt;/span&gt;
 &lt;div style=&quot;text-align: CENTER; font-size: 30px&quot;&gt;[[ENTER-&gt;entrance]]
-[[CREDITS]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="CREDITS" tags="mall-light" position="100,367" size="100,100">&lt;div style=&quot;text-align: CENTER;&quot;&gt;
+[[CREDITS]]&lt;/div&gt;
+
+&lt;&lt;audio &quot;testinggg&quot; play&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="CREDITS" tags="mall-light" position="100,367" size="100,100">&lt;div style=&quot;text-align: CENTER;&quot;&gt;
 
 CREDITS
 George Whitfield 
@@ -525,6 +587,8 @@ Helena Yang
 
 Made for Game Creation Society
 Game Narratives Fall 2020
+
+Custom Macros by Chapel
 
 [[BACK-&gt;morty-sign]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="test" tags="" position="1590,123" size="100,100"></tw-passagedata><tw-passagedata pid="56" name="meat-turn-around-1" tags="dark-store panic-3" position="530,1795" size="100,100">&lt;div style=&quot;text-align: CENTER;&quot;&gt;AISLE 1&lt;/div&gt;
